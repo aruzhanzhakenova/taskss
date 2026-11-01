@@ -1,0 +1,1171 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7–9-сыныптарда геометрияны оқыту әдістемесі</title>
+
+<style>
+:root {
+  --main: #3449a3;
+  --light: #eef1ff;
+  --accent: #ed9d58;
+  --dark: #202947;
+  --bg: #f6f7fc;
+  --white: #ffffff;
+  --green: #25865c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+  line-height: 1.65;
+}
+
+header {
+  background: linear-gradient(130deg, #27377e, #6578d7);
+  color: white;
+  padding: 55px 8%;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0 0 15px;
+  max-width: 800px;
+}
+
+header p {
+  max-width: 750px;
+  font-size: 17px;
+}
+
+nav {
+  background: white;
+  padding: 13px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px #0001;
+}
+
+nav a {
+  color: var(--main);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background: var(--light);
+}
+
+main {
+  max-width: 1050px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: white;
+  border-radius: 16px;
+  padding: 27px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 14px #2029470b;
+}
+
+h2 {
+  color: var(--main);
+  margin-top: 0;
+  border-bottom: 2px solid var(--light);
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #3449a3;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: var(--light);
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.grade {
+  border-left: 5px solid var(--accent);
+  padding: 12px 17px;
+  background: #fff8ef;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.example {
+  border: 1px solid #dfe3f5;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 15px 0;
+}
+
+.formula {
+  background: var(--light);
+  padding: 13px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main);
+  margin: 12px 0;
+}
+
+button {
+  background: var(--main);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 18px;
+  cursor: pointer;
+  margin: 5px 3px;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: .85;
+}
+
+.option {
+  display: block;
+  background: #f1f3fc;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.option:hover {
+  border-color: var(--main);
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.correct {
+  color: var(--green);
+}
+
+.wrong {
+  color: #d34444;
+}
+
+.progress {
+  height: 10px;
+  background: #e5e7f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 0;
+  background: var(--green);
+  transition: .3s;
+}
+
+.game-box {
+  background: #f5f6ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+select, input, textarea {
+  padding: 11px;
+  border: 1px solid #ccd1e2;
+  border-radius: 8px;
+  font-size: 15px;
+  max-width: 100%;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+@media(max-width:600px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  nav {
+    position: relative;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- БАС БЕТ -->
+
+<header>
+  <h1>7–9-сыныптарда геометрияны оқыту әдістемесі</h1>
+
+  <p>
+    Геометрияны оқытудың тиімді әдістері, геометриялық
+    ұғымдарды қалыптастыру, теоремаларды дәлелдеу,
+    есептерді шешу және интерактивті тапсырмалар.
+  </p>
+
+  <p><b>Пәні:</b> Математиканы оқыту әдістемесі</p>
+
+  <p><b>Дәріс тақырыбы:</b>
+  7–9-сыныптарда геометрияны оқыту әдістемесі</p>
+</header>
+
+<!-- МӘЗІР -->
+
+<nav>
+  <a href="#theory">Теория</a>
+  <a href="#grades">7–9 сыныптар</a>
+  <a href="#methods">Оқыту әдістері</a>
+  <a href="#examples">Мысалдар</a>
+  <a href="#platforms">Платформалар</a>
+  <a href="#test">Бекіту</a>
+  <a href="#games">Ойындар</a>
+  <a href="#result">Қорытынды</a>
+</nav>
+
+<main>
+
+<!-- 1. ТЕОРИЯ -->
+
+<section id="theory">
+
+<h2>1. Геометрияны оқытудың мақсаты мен міндеттері</h2>
+
+<p>
+Геометрияны оқыту әдістемесі – оқушыларға геометриялық
+білімді меңгертудің мазмұнын, әдістерін, тәсілдері мен
+құралдарын зерттейтін математиканы оқыту әдістемесінің
+маңызды саласы.
+</p>
+
+<p>
+7–9-сыныптарда геометрияны оқыту оқушылардың кеңістіктік
+елестетуін, логикалық ойлауын, математикалық тілін,
+дәлелдеу және зерттеу қабілеттерін дамытуға бағытталады.
+</p>
+
+<h3>Негізгі мақсаттары</h3>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>📐 Кеңістіктік ойлау</h3>
+<p>
+Геометриялық фигураларды елестету, салыстыру,
+олардың қасиеттерін анықтау.
+</p>
+</div>
+
+<div class="card">
+<h3>🧠 Логикалық ойлау</h3>
+<p>
+Геометриялық тұжырымдарды талдау,
+салыстыру және қорытынды жасау.
+</p>
+</div>
+
+<div class="card">
+<h3>✏️ Дәлелдеу дағдысы</h3>
+<p>
+Теоремаларды дәлелдеу, математикалық
+пайымдау мәдениетін қалыптастыру.
+</p>
+</div>
+
+<div class="card">
+<h3>💡 Шығармашылық қабілет</h3>
+<p>
+Геометриялық есептерді әртүрлі тәсілдермен
+шешу және зерттеу.
+</p>
+</div>
+
+</div>
+
+<h3>Геометрияны оқытудың негізгі міндеттері</h3>
+
+<ul>
+<li>Геометриялық ұғымдарды қалыптастыру;</li>
+<li>Геометриялық фигуралардың қасиеттерін меңгерту;</li>
+<li>Аксиомалар мен теоремаларды түсіндіру;</li>
+<li>Дәлелдеу және есеп шығару дағдыларын дамыту;</li>
+<li>Геометриялық білімді күнделікті өмірде қолдану;</li>
+<li>Оқушылардың математикалық сауаттылығын арттыру.</li>
+</ul>
+
+</section>
+
+<!-- 2. СЫНЫПТАР -->
+
+<section id="grades">
+
+<h2>2. 7–9-сыныптардағы геометрия курсының мазмұны</h2>
+
+<div class="grade">
+
+<h3>7-сынып – Геометрияның бастапқы ұғымдары</h3>
+
+<ul>
+<li>Нүкте, түзу, кесінді және сәуле;</li>
+<li>Бұрыштар және олардың түрлері;</li>
+<li>Үшбұрыштар және олардың қасиеттері;</li>
+<li>Үшбұрыштар теңдігінің белгілері;</li>
+<li>Параллель түзулер және олардың қасиеттері.</li>
+</ul>
+
+<b>Оқыту ерекшелігі:</b>
+көрнекілік, сызба, бақылау, салыстыру және
+қарапайым дәлелдеу әдістерін қолдану.
+
+</div>
+
+<div class="grade">
+
+<h3>8-сынып – Геометриялық қасиеттерді тереңдету</h3>
+
+<ul>
+<li>Төртбұрыштар;</li>
+<li>Параллелограмм және трапеция;</li>
+<li>Пифагор теоремасы;</li>
+<li>Үшбұрыштардың ұқсастығы;</li>
+<li>Фигуралардың аудандары.</li>
+</ul>
+
+<b>Оқыту ерекшелігі:</b>
+проблемалық оқыту, зерттеу, теоремаларды
+дәлелдеу және есептерді талдау.
+
+</div>
+
+<div class="grade">
+
+<h3>9-сынып – Геометриялық білімді жүйелеу</h3>
+
+<ul>
+<li>Шеңбер және дөңгелек;</li>
+<li>Векторлар;</li>
+<li>Координаталар әдісі;</li>
+<li>Геометриялық түрлендірулер;</li>
+<li>Күрделі геометриялық есептер.</li>
+</ul>
+
+<b>Оқыту ерекшелігі:</b>
+зерттеушілік әдіс, модельдеу, аналитикалық
+және синтетикалық тәсілдерді пайдалану.
+
+</div>
+
+</section>
+
+<!-- 3. ОҚЫТУ ӘДІСТЕРІ -->
+
+<section id="methods">
+
+<h2>3. Геометрияны оқытудың негізгі әдістері</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>1. Көрнекілік әдісі</h3>
+
+<p>
+Сызбалар, модельдер, геометриялық фигуралар
+арқылы жаңа материалды түсіндіру.
+</p>
+
+<b>Мысал:</b>
+Үшбұрыштың бұрыштарын өлшеп,
+олардың қосындысын анықтау.
+</div>
+
+<div class="card">
+<h3>2. Проблемалық оқыту</h3>
+
+<p>
+Оқушыға мәселе ұсыну арқылы өздігінен
+шешім іздеуге бағыттау.
+</p>
+
+<b>Мысал:</b>
+Үшбұрыштың бір қабырғасын өзгерткенде
+оның бұрыштары қалай өзгереді?
+</div>
+
+<div class="card">
+<h3>3. Зерттеушілік әдіс</h3>
+
+<p>
+Бақылау, тәжірибе, болжам жасау
+және дәлелдеу әрекеттері.
+</p>
+
+<b>Мысал:</b>
+GeoGebra арқылы параллелограммның
+қасиеттерін зерттеу.
+</div>
+
+<div class="card">
+<h3>4. Практикалық әдіс</h3>
+
+<p>
+Геометриялық есептерді сызу, өлшеу
+және модельдеу арқылы орындау.
+</p>
+
+<b>Мысал:</b>
+Бөлменің ауданын есептеу.
+</div>
+
+<div class="card">
+<h3>5. Саралап оқыту</h3>
+
+<p>
+Оқушылардың білім деңгейіне қарай
+тапсырмалардың күрделілігін өзгерту.
+</p>
+
+<b>Мысал:</b>
+Базалық, орта және күрделі есептер беру.
+</div>
+
+<div class="card">
+<h3>6. Цифрлық оқыту</h3>
+
+<p>
+Интерактивті платформалар мен динамикалық
+бағдарламаларды пайдалану.
+</p>
+
+<b>Мысал:</b>
+GeoGebra, Wordwall, LearningApps.
+</div>
+
+</div>
+
+<h3>Геометриялық есептерді шығарудың кезеңдері</h3>
+
+<ol>
+<li>Есептің шартын мұқият оқу;</li>
+<li>Берілген мәліметтерді анықтау;</li>
+<li>Сызба немесе геометриялық модель құру;</li>
+<li>Қажетті теорема мен формуланы таңдау;</li>
+<li>Шешу жолын негіздеу;</li>
+<li>Жауабын тексеру және қорытынды жасау.</li>
+</ol>
+
+</section>
+
+<!-- 4. МЫСАЛДАР -->
+
+<section id="examples">
+
+<h2>4. Геометриялық есептерді оқыту мысалдары</h2>
+
+<div class="example">
+
+<h3>Мысал 1. 7-сынып – Үшбұрыштың бұрыштары</h3>
+
+<p>
+<b>Есеп:</b> Үшбұрыштың екі бұрышы 50° және 60°.
+Үшінші бұрышын табыңыз.
+</p>
+
+<div class="formula">
+α + β + γ = 180°
+</div>
+
+<b>Шешуі:</b>
+
+<p>
+γ = 180° − 50° − 60° = 70°
+</p>
+
+<p class="correct"><b>Жауабы: 70°.</b></p>
+
+<b>Әдістемелік түсіндіру:</b>
+
+<p>
+Оқушыларға үшбұрыштың бұрыштарын транспортирмен
+өлшетіп, ішкі бұрыштарының қосындысы туралы
+заңдылықты бақылау арқылы түсіндіруге болады.
+</p>
+
+</div>
+
+<div class="example">
+
+<h3>Мысал 2. 8-сынып – Пифагор теоремасы</h3>
+
+<p>
+<b>Есеп:</b> Тікбұрышты үшбұрыштың катеттері
+6 см және 8 см. Гипотенузасын табыңыз.
+</p>
+
+<div class="formula">
+c² = a² + b²
+</div>
+
+<b>Шешуі:</b>
+
+<p>
+c² = 6² + 8² = 36 + 64 = 100
+</p>
+
+<p>
+c = √100 = 10 см.
+</p>
+
+<p class="correct"><b>Жауабы: 10 см.</b></p>
+
+<b>Әдістемелік түсіндіру:</b>
+
+<p>
+GeoGebra бағдарламасында тікбұрышты үшбұрыш
+құрып, катеттердің ұзындығын өзгерту арқылы
+теореманың орындалуын зерттеуге болады.
+</p>
+
+</div>
+
+<div class="example">
+
+<h3>Мысал 3. 9-сынып – Шеңбер ұзындығы</h3>
+
+<p>
+<b>Есеп:</b> Шеңбердің радиусы 5 см.
+Шеңбер ұзындығын табыңыз.
+</p>
+
+<div class="formula">
+L = 2πR
+</div>
+
+<b>Шешуі:</b>
+
+<p>
+L = 2 · π · 5 = 10π ≈ 31,4 см.
+</p>
+
+<p class="correct"><b>Жауабы: 31,4 см.</b></p>
+
+</div>
+
+</section>
+
+<!-- 5. ЦИФРЛЫҚ ПЛАТФОРМАЛАР -->
+
+<section id="platforms">
+
+<h2>5. Геометрияны оқытуда цифрлық платформаларды қолдану</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>GeoGebra</h3>
+<p>
+Геометриялық фигураларды салу, бұрыштарды өлшеу,
+қасиеттерін зерттеу және динамикалық модель құру.
+</p>
+<a href="https://www.geogebra.org/geometry" target="_blank">
+Платформаға өту →
+</a>
+</div>
+
+<div class="card">
+<h3>Wordwall</h3>
+<p>
+Тест, викторина, сәйкестендіру және
+интерактивті ойындар құрастыру.
+</p>
+<a href="https://wordwall.net/" target="_blank">
+Платформаға өту →
+</a>
+</div>
+
+<div class="card">
+<h3>LearningApps</h3>
+<p>
+Геометриялық фигуралар мен олардың
+қасиеттерін сәйкестендіру тапсырмалары.
+</p>
+<a href="https://learningapps.org/" target="_blank">
+Платформаға өту →
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- 6. ТЕСТ -->
+
+<section id="test">
+
+<h2>6. Білімді бекіту – интерактивті тест</h2>
+
+<p>
+Төмендегі сұрақтарға жауап беріп, өз біліміңізді тексеріңіз.
+Әр дұрыс жауап үшін 1 балл беріледі.
+</p>
+
+<div class="progress">
+<div class="bar" id="progress"></div>
+</div>
+
+<p id="counter">1 / 5 сұрақ</p>
+
+<div id="quiz">
+
+<h3 id="question"></h3>
+
+<div id="answers"></div>
+
+<div id="feedback" class="feedback"></div>
+
+<button id="next" onclick="nextQuestion()" style="display:none">
+Келесі сұрақ →
+</button>
+
+</div>
+
+<div id="quizResult" style="display:none">
+
+<h3>Тест аяқталды!</h3>
+
+<h2 id="score"></h2>
+
+<p id="scoreMessage"></p>
+
+<button onclick="restartQuiz()">Қайта орындау</button>
+
+</div>
+
+</section>
+
+<!-- 7. ОЙЫНДАР -->
+
+<section id="games">
+
+<h2>7. Интерактивті ойындар</h2>
+
+<!-- ОЙЫН 1 -->
+
+<div class="game-box">
+
+<h3>🎯 1-ойын. Дұрыс па, бұрыс па?</h3>
+
+<p id="tfQuestion">
+Үшбұрыштың ішкі бұрыштарының қосындысы 180°.
+</p>
+
+<button onclick="checkTF(true)">Дұрыс</button>
+
+<button onclick="checkTF(false)">Бұрыс</button>
+
+<p id="tfFeedback" class="feedback"></p>
+
+<button onclick="nextTF()">Келесі тұжырым →</button>
+
+<p id="tfCounter">1 / 5</p>
+
+</div>
+
+<!-- ОЙЫН 2 -->
+
+<div class="game-box">
+
+<h3>🧩 2-ойын. Сәйкестендір</h3>
+
+<p>
+Геометриялық фигураларды олардың қасиеттерімен сәйкестендіріңіз.
+</p>
+
+<p><b>1. Квадрат</b></p>
+
+<select id="match1">
+<option value="">Таңдаңыз</option>
+<option value="a">Барлық қабырғалары тең, бұрыштары тік</option>
+<option value="b">Бір жұп қарама-қарсы қабырғалары параллель</option>
+<option value="c">Қарама-қарсы қабырғалары параллель</option>
+</select>
+
+<p><b>2. Трапеция</b></p>
+
+<select id="match2">
+<option value="">Таңдаңыз</option>
+<option value="a">Барлық қабырғалары тең, бұрыштары тік</option>
+<option value="b">Бір жұп қарама-қарсы қабырғалары параллель</option>
+<option value="c">Қарама-қарсы қабырғалары параллель</option>
+</select>
+
+<p><b>3. Параллелограмм</b></p>
+
+<select id="match3">
+<option value="">Таңдаңыз</option>
+<option value="a">Барлық қабырғалары тең, бұрыштары тік</option>
+<option value="b">Бір жұп қарама-қарсы қабырғалары параллель</option>
+<option value="c">Қарама-қарсы қабырғалары параллель</option>
+</select>
+
+<br>
+
+<button onclick="checkMatch()">Тексеру</button>
+
+<p id="matchFeedback" class="feedback"></p>
+
+</div>
+
+<!-- ОЙЫН 3 -->
+
+<div class="game-box">
+
+<h3>⚡ 3-ойын. Жылдам есеп</h3>
+
+<p>
+Тікбұрышты үшбұрыштың катеттері 3 см және 4 см.
+Гипотенузасы нешеге тең?
+</p>
+
+<input
+id="fastAnswer"
+type="number"
+placeholder="Жауабыңызды енгізіңіз"
+>
+
+<button onclick="checkFast()">Жауап беру</button>
+
+<p id="fastFeedback" class="feedback"></p>
+
+</div>
+
+</section>
+
+<!-- 8. ҚОРЫТЫНДЫ -->
+
+<section id="result">
+
+<h2>8. Қорытынды және рефлексия</h2>
+
+<p>
+7–9-сыныптарда геометрияны оқыту барысында
+көрнекілік, проблемалық, зерттеушілік, практикалық
+және цифрлық әдістерді тиімді үйлестіру маңызды.
+Бұл әдістер оқушылардың геометриялық білімін
+тереңдетіп, логикалық және кеңістіктік ойлауын дамытады.
+</p>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>💡 Мен білдім</h3>
+<p>
+Геометрияны оқытудың жаңа әдістерін меңгердім.
+</p>
+</div>
+
+<div class="card">
+<h3>✏️ Мен үйрендім</h3>
+<p>
+Интерактивті тапсырмаларды қолдануды үйрендім.
+</p>
+</div>
+
+<div class="card">
+<h3>🎯 Мен қолданамын</h3>
+<p>
+Геометрия сабағында цифрлық платформаларды пайдаланамын.
+</p>
+</div>
+
+</div>
+
+<h3>Рефлексия сұрағы</h3>
+
+<p>
+Сіздің ойыңызша, 7–9-сыныптарда геометрияны
+оқытудың ең тиімді әдісі қайсы және неліктен?
+</p>
+
+<textarea
+id="reflection"
+rows="4"
+style="width:100%"
+placeholder="Өз пікіріңізді жазыңыз..."
+></textarea>
+
+<br>
+
+<button onclick="saveReflection()">Жауапты сақтау</button>
+
+<p id="reflectionFeedback"></p>
+
+</section>
+
+</main>
+
+<!-- ТӨМЕНГІ БӨЛІМ -->
+
+<footer>
+
+<h3 style="color:white">
+7–9-сыныптарда геометрияны оқыту әдістемесі
+</h3>
+
+<p>Математиканы оқыту әдістемесі</p>
+
+<p>Теория • Практика • Интерактивті тапсырмалар</p>
+
+</footer>
+
+<script>
+
+// ИНТЕРАКТИВТІ ТЕСТ
+
+const questions = [
+
+{
+q:"Үшбұрыштың ішкі бұрыштарының қосындысы нешеге тең?",
+a:["90°","180°","270°","360°"],
+correct:1
+},
+
+{
+q:"Пифагор теоремасы қай үшбұрышқа қолданылады?",
+a:["Теңқабырғалы","Теңбүйірлі","Тікбұрышты","Кез келген"],
+correct:2
+},
+
+{
+q:"Квадраттың барлық бұрыштары нешеге тең?",
+a:["60°","90°","120°","180°"],
+correct:1
+},
+
+{
+q:"Шеңбер ұзындығының формуласы қандай?",
+a:["S = a²","L = 2πR","S = ab","P = 4a"],
+correct:1
+},
+
+{
+q:"Геометриялық фигураларды динамикалық түрде зерттеуге арналған бағдарлама?",
+a:["Word","GeoGebra","Excel","PowerPoint"],
+correct:1
+}
+
+];
+
+let current = 0;
+let points = 0;
+let answered = false;
+
+function showQuestion() {
+
+answered = false;
+
+let q = questions[current];
+
+document.getElementById("question").textContent = q.q;
+
+document.getElementById("counter").textContent =
+(current + 1) + " / " + questions.length + " сұрақ";
+
+document.getElementById("progress").style.width =
+(current / questions.length * 100) + "%";
+
+document.getElementById("feedback").textContent = "";
+
+document.getElementById("next").style.display = "none";
+
+let html = "";
+
+q.a.forEach((answer, i) => {
+
+html += `
+<label class="option">
+<input type="radio" name="answer" value="${i}">
+${answer}
+</label>
+`;
+
+});
+
+document.getElementById("answers").innerHTML = html;
+
+document.querySelectorAll('input[name="answer"]').forEach(el => {
+
+el.addEventListener("change", () => {
+
+if (answered) return;
+
+answered = true;
+
+let selected = Number(el.value);
+
+let feedback = document.getElementById("feedback");
+
+if (selected === q.correct) {
+
+points++;
+
+feedback.textContent = "✓ Дұрыс жауап!";
+
+feedback.className = "feedback correct";
+
+} else {
+
+feedback.textContent =
+"✗ Қате. Дұрыс жауап: " + q.a[q.correct];
+
+feedback.className = "feedback wrong";
+
+}
+
+document.getElementById("next").style.display = "inline-block";
+
+});
+
+});
+
+}
+
+function nextQuestion() {
+
+current++;
+
+if (current < questions.length) {
+
+showQuestion();
+
+} else {
+
+document.getElementById("quiz").style.display = "none";
+
+document.getElementById("quizResult").style.display = "block";
+
+document.getElementById("progress").style.width = "100%";
+
+document.getElementById("score").textContent =
+points + " / " + questions.length + " дұрыс жауап";
+
+let message = "";
+
+if (points === 5) {
+message = "Өте жақсы! Барлық сұраққа дұрыс жауап бердіңіз.";
+} else if (points >= 3) {
+message = "Жақсы нәтиже! Біліміңізді әлі де жетілдіріңіз.";
+} else {
+message = "Тақырыпты қайталап, тестті қайта орындаңыз.";
+}
+
+document.getElementById("scoreMessage").textContent = message;
+
+}
+
+}
+
+function restartQuiz() {
+
+current = 0;
+points = 0;
+
+document.getElementById("quiz").style.display = "block";
+
+document.getElementById("quizResult").style.display = "none";
+
+showQuestion();
+
+}
+
+// ОЙЫН 1: ДҰРЫС / БҰРЫС
+
+const statements = [
+
+{
+text:"Үшбұрыштың ішкі бұрыштарының қосындысы 180°.",
+answer:true
+},
+
+{
+text:"Квадраттың барлық қабырғалары әртүрлі.",
+answer:false
+},
+
+{
+text:"Тікбұрышты үшбұрышта бір бұрыш 90° болады.",
+answer:true
+},
+
+{
+text:"Шеңбердің диаметрі радиустан екі есе үлкен.",
+answer:true
+},
+
+{
+text:"Параллелограмның қарама-қарсы қабырғалары параллель.",
+answer:true
+}
+
+];
+
+let tfIndex = 0;
+
+function checkTF(choice) {
+
+let result = statements[tfIndex].answer === choice;
+
+let el = document.getElementById("tfFeedback");
+
+if (result) {
+
+el.textContent = "✓ Дұрыс жауап!";
+
+el.className = "feedback correct";
+
+} else {
+
+el.textContent = "✗ Қате жауап!";
+
+el.className = "feedback wrong";
+
+}
+
+}
+
+function nextTF() {
+
+tfIndex = (tfIndex + 1) % statements.length;
+
+document.getElementById("tfQuestion").textContent =
+statements[tfIndex].text;
+
+document.getElementById("tfFeedback").textContent = "";
+
+document.getElementById("tfCounter").textContent =
+(tfIndex + 1) + " / " + statements.length;
+
+}
+
+// ОЙЫН 2: СӘЙКЕСТЕНДІРУ
+
+function checkMatch() {
+
+let correct = 0;
+
+if (document.getElementById("match1").value === "a") correct++;
+
+if (document.getElementById("match2").value === "b") correct++;
+
+if (document.getElementById("match3").value === "c") correct++;
+
+let el = document.getElementById("matchFeedback");
+
+el.textContent = correct + " / 3 дұрыс жауап";
+
+el.className = "feedback " + (correct === 3 ? "correct" : "wrong");
+
+}
+
+// ОЙЫН 3: ЖЫЛДАМ ЕСЕП
+
+function checkFast() {
+
+let answer = document.getElementById("fastAnswer").value;
+
+let el = document.getElementById("fastFeedback");
+
+if (answer.trim() !== "" && Number(answer) === 5) {
+
+el.textContent =
+"✓ Дұрыс! 3² + 4² = 25, √25 = 5 см.";
+
+el.className = "feedback correct";
+
+} else {
+
+el.textContent =
+"Қайта ойланып көріңіз. Пифагор теоремасын қолданыңыз.";
+
+el.className = "feedback wrong";
+
+}
+
+}
+
+// РЕФЛЕКСИЯ
+
+function saveReflection() {
+
+let value = document.getElementById("reflection").value.trim();
+
+let el = document.getElementById("reflectionFeedback");
+
+if (value) {
+
+el.textContent = "Жауабыңыз қабылданды! Рефлексия аяқталды.";
+
+el.className = "feedback correct";
+
+} else {
+
+el.textContent = "Алдымен пікіріңізді жазыңыз.";
+
+el.className = "feedback wrong";
+
+}
+
+}
+
+// ТЕСТТІ БАСТАУ
+
+showQuestion();
+
+</script>
+
+</body>
+</html>
